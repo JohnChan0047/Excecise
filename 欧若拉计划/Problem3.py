@@ -19,8 +19,8 @@
 
 # 任何正整数可以分解为质因数的幂的积
 def fun(x):
-    n = 2
     pf = []
+    n = 2
     while n <= x:
         if x % n == 0:
             x = x / n
@@ -32,4 +32,3 @@ def fun(x):
 prime_factor = fun(600851475144)
 print(prime_factor)
 print(prime_factor[-1])
-
