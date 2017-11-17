@@ -25,7 +25,7 @@ def selection_sort(arr):
     for i in range(len(arr)-1):
         min_set = i
         for j in range(i+1, len(arr)):
-            if arr[j] < arr[min]:
+            if arr[j] < arr[min_set]:
                 min_set = j
         arr[i], arr[min_set] = arr[min_set], arr[i]
     return arr
