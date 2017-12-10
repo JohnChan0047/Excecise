@@ -11,5 +11,5 @@ def func(num):
 		t = li[-1] + li[-2]
 		li.append(t)
 		n = len(li)
-	return li
-print(func(10))
+	return li[n-1]
+print(func(1000))
