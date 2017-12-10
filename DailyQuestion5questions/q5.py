@@ -23,10 +23,7 @@ def url_parse(url):
             for i in range(len(tem_list)):
                 if tem_list[i] == '':
                     tem_list[i] = '='
-            st = ''
-            for i in tem_list[1:]:
-                st = st + i
-                query_params[tem_list[0]] = st
+            query_params[tem_list[0]] = ''.join(tem_list[1:])
         else:
             tem_list = tem.split('=')
             query_params[tem_list[0]] = tem_list[1]
