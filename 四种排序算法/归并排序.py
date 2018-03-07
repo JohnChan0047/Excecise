@@ -29,7 +29,7 @@ print(random_list)
 
 
 def merge_sort(arr):
-    if len(arr)<2:
+    if len(arr) < 2:
         return arr
     middle = int(len(arr)/2)
     left, right = arr[0:middle], arr[middle:]
