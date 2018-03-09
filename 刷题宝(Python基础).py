@@ -1,6 +1,8 @@
 # -*- coding:utf-8 -*- 
 __author__ = 'John 2018/3/7 21:35'
 import string
+import random
+import os
 
 print(set([1, 2]))  # {1，2}
 print((2))  # 2
@@ -130,4 +132,27 @@ exec('print("love")')
 print(string.printable)
 print(2 * 'work')
 print(2 ** (-2))
+a = '{:>10s}{:>10s}'.format('hello', 'world')
+print(a, len(a))
+print(random.sample(range(100, 200), 10))
+#
+#
+
+
+def datetimeFormat(func):
+    def wrap(*args, **kwargs):
+        print(args[0])
+        return func(*args,**kwargs)
+    return wrap
+
+
+@datetimeFormat
+def day_period(enddate,period,*args,**kwargs):
+    pass
+
+
+day_period('20160101', 7)
+#
+#
+print(os.getcwd())
 #
