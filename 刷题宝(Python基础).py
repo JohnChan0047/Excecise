@@ -127,7 +127,7 @@ print(mylist)
 #
 #
 exec('print("love")')
-#
-#
 print(string.printable)
+print(2 * 'work')
+print(2 ** (-2))
 #
