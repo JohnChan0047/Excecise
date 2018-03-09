@@ -99,7 +99,7 @@ print(toupper(Go()))
 print(type(toupper(Go())))
 #
 a = [1, 2, 3, 4, 5, 6]
-b = a[::2]
+b = a[1:4]
 print(b)
 #
 #
@@ -109,4 +109,25 @@ print("%05.2f" % 1.111)
 aList = [1, 3, 5, 2, 4]
 aList = aList.sort()  # sort()没有返回值
 print(aList)
+#
+#
+print((5).bit_length())  # 转为二进制后求位数
+#
+#
+print(u"hello world")
+#
+#
+num = '四'
+print(num.isnumeric())
+#
+#
+mylist = [1, 2, 3, 4]
+mylist.sort(reverse=True)
+print(mylist)
+#
+#
+exec('print("love")')
+#
+#
+print(string.printable)
 #
