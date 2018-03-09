@@ -82,3 +82,31 @@ class Ball(object):
 
 print(Ball.func(2, 6))
 #
+
+
+#
+
+
+class Go:
+    name = 'hello'
+
+
+def toupper(self):
+    return self.name.upper()
+
+
+print(toupper(Go()))
+print(type(toupper(Go())))
+#
+a = [1, 2, 3, 4, 5, 6]
+b = a[::2]
+print(b)
+#
+#
+print("%05.2f" % 1.111)
+#
+#
+aList = [1, 3, 5, 2, 4]
+aList = aList.sort()  # sort()没有返回值
+print(aList)
+#
