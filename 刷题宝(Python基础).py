@@ -3,6 +3,8 @@ __author__ = 'John 2018/3/7 21:35'
 import string
 import random
 import os
+import re
+import copy
 
 print(set([1, 2]))  # {1，2}
 print((2))  # 2
@@ -155,4 +157,29 @@ day_period('20160101', 7)
 #
 #
 print(os.getcwd())
+fpath, fname = os.path.split("C:\\Users\\test.txt")
+print(fpath, fname)
+dic = {'name': 'John', 'age': 23}
+print(dic.keys())
+p = re.compile('ab*', re.I)  # 忽略大小写，取短
+print(p.findall('abAB'))
+p = re.compile('\^ab')
+print(p.findall('^abAB  ^abc ccc ABc'))
+a = [1, 2, 3, ['a', 'b', 'c']]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+print(
+    id(a) == id(c),
+    id(a) == id(d),
+    id(a[0]) == id(c[0]),
+    id(a[3]) == id(d[3]),
+)
+a.append(5)
+a[3].append(1)
+print(a, id(a), id(a[0]))
+print(b, id(b))
+print(c, id(c), id(c[0]))
+print(d, id(d), id(d[0]))
+
 #
