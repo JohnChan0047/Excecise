@@ -5,6 +5,7 @@ import random
 import os
 import re
 import copy
+import socket
 
 print(set([1, 2]))  # {1，2}
 print((2))  # 2
@@ -182,5 +183,43 @@ print([id(ele) for ele in a])
 print([id(ele) for ele in b])
 print([id(ele) for ele in c])
 print([id(ele) for ele in d])
-#
+print(socket.gethostname())
 
+#
+#
+import threading
+
+
+class MyThread(threading.Thread):
+    def __init__(self):
+        threading.Thread.__init__(self)
+
+    def run(self):
+        print(self.isDaemon())
+
+
+if __name__ == "__main__":
+    t = MyThread()
+    t.start()
+#
+print('b' and 'a')
+print('b' or 'a')
+a = [1, 2, 3]
+b = [4, 5, 6]
+for (a_val, b_val) in zip(a, b):
+    print(a_val, b_val)
+
+f0, f1, f2 = [lambda x: x*i for i in range(3)]
+f3, f4, f5 = [lambda x: x*0, lambda x: x*1, lambda x: x*2]
+print(f0(1))
+print(f1(1))
+print(f2(1))
+print(f3(1))
+print(f4(1))
+print(f5(1))
+f = [lambda x: x*i for i in range(3)]
+print(type(f))
+print(sum(map(lambda x: -1, (5,)*9))^0)
+print((5, )*9)
+print((-1) ^ 0)
+print([i for i in map(lambda x: -1, (5, )*9)])
