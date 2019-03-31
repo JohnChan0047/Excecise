@@ -18,7 +18,7 @@ class Sphere(object):
 
     @property
     def area(self):
-        return math.pi * pow(self.radius, 2)
+        return 4 * math.pi * pow(self.radius, 2)
 
     @property
     def volume(self):
@@ -34,7 +34,7 @@ def main():
         except ValueError:
             radius = input("输入错误，请重新输入半径：")
     sphere = Sphere(radius)
-    print(sphere.diameter, sphere.circumference, sphere.area, sphere.volume)
+    print("直径：{}，周长：{}，面积：{}，半径：{}".format(sphere.diameter, sphere.circumference, sphere.area, sphere.volume))
 
 
 if __name__ == '__main__':
