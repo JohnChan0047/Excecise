@@ -12,6 +12,7 @@ class Solution:
     @param b: An integer
     @return: The sum of a and b
     """
+
     def aplusb(self, a, b):
         # write your code here
         return sum([a, b])

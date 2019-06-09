@@ -17,5 +17,5 @@ class Solution:
 
     def digitCounts(self, k, n):
         # write your code here
-        s = ''.join([str(i) for i in range(n+1)])
+        s = ''.join([str(i) for i in range(n + 1)])
         return s.count(str(k))

@@ -8,12 +8,12 @@
 # 5、从 3 和 4 推导可知道，i 与 j 均是大于等于 2 的偶数。
 # 6、由于 i * j = 168， j>=2，则 1 < i < 168 / 2 + 1。
 # 7、接下来将 i 的所有数字循环计算即可。
-for i in range(1, int(168/2+1)):
+for i in range(1, int(168 / 2 + 1)):
     for j in range(2, i):
-        if i*j == 168 and i%2 == 0 and j%2 == 0:
+        if i * j == 168 and i % 2 == 0 and j % 2 == 0:
             # print(i, j)
-            m = (i+j)/2
-            n = (i-j)/2
-            x = n*n - 100
-            y = m*m - 100 - 168
+            m = (i + j) / 2
+            n = (i - j) / 2
+            x = n * n - 100
+            y = m * m - 100 - 168
             print(m, n, x, y)

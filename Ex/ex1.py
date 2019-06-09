@@ -5,6 +5,6 @@ for b in li:
     for s in li:
         for g in li:
             if b != s and b != g and s != g:
-                x = b*100 + s*10 + g
+                x = b * 100 + s * 10 + g
                 x_list.append(x)
 print(x_list)

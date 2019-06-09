@@ -5,11 +5,15 @@
 # F1 = 1    (n=1)
 # Fn = F[n-1]+ F[n-2](n=>2)
 li = [0, 1]
+
+
 def func(num):
-	n = len(li)
-	while n <= num:
-		t = li[-1] + li[-2]
-		li.append(t)
-		n = len(li)
-	return li[n-1]
+    n = len(li)
+    while n <= num:
+        t = li[-1] + li[-2]
+        li.append(t)
+        n = len(li)
+    return li[n - 1]
+
+
 print(func(1000))

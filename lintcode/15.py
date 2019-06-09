@@ -11,6 +11,7 @@ class Solution:
     @param: nums: A list of integers.
     @return: A list of permutations.
     """
+
     def func(self, nums):
         # write your code here
         result = []

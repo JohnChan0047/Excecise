@@ -13,10 +13,11 @@ class Solution:
     @param n: an integer
     @return:  the factorial of n
     """
+
     def factorial(self, n):
         # write your code here
         result = 1
-        for i in range(1, n+1):
+        for i in range(1, n + 1):
             result = result * i
         return str(result)
 

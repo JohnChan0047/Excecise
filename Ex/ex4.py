@@ -9,11 +9,11 @@ day = int(data[6:8])
 if month > 12 or day > 31:
     print("日期输入错误")
 else:
-    if year%4 == 0 and year%100 != 0 or year%400 == 0:
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
         if month > 2:
-            d = day + p[month-1] + 1
+            d = day + p[month - 1] + 1
         else:
-            d = day + p[month-1]
+            d = day + p[month - 1]
     else:
         d = day + p[month - 1]
     print(year, month, day)

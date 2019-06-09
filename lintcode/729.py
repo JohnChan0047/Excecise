@@ -20,11 +20,11 @@ class Solution:
 
     def computeLastDigit(self, A, B):
         # write your code here
-        if B-A > 10:
+        if B - A > 10:
             return 0
         else:
             s = 1
-            for i in range(A+1, B+1):
+            for i in range(A + 1, B + 1):
                 s = s * i
             return s % 10
 
