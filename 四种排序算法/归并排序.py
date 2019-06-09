@@ -22,6 +22,7 @@ __author__ = 'John 2017/11/8 15:59'
 
 将另一序列剩下的所有元素直接复制到合并序列尾。"""
 import random
+
 random_list = []
 for i in range(20):
     random_list.append(random.randint(0, 20))
@@ -31,7 +32,7 @@ print(random_list)
 def merge_sort(arr):
     if len(arr) < 2:
         return arr
-    middle = int(len(arr)/2)
+    middle = int(len(arr) / 2)
     left, right = arr[0:middle], arr[middle:]
     return merge(merge_sort(left), merge_sort(right))
 

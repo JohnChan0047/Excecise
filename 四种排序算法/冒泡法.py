@@ -19,7 +19,9 @@ __author__ = 'John 2017/11/7 23:39'
 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
 """
 """生产随机数列"""
+
 import random
+
 random_list = []
 for i in range(20):
     random_list.append(random.randint(0, 20))
@@ -27,12 +29,11 @@ print(random_list)
 
 
 def bubble_sort(arr):
-
     for i in range(len(arr)):
         flag = 0
-        for j in range(len(arr)-1-i):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+        for j in range(len(arr) - 1 - i):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 flag = 1
         if flag == 0:
             return arr

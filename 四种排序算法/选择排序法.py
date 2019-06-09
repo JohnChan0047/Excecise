@@ -15,6 +15,7 @@ __author__ = 'John 2017/11/8 10:40'
 重复第二步，直到所有元素均排序完毕。
 """
 import random
+
 random_list = []
 for i in range(20):
     random_list.append(random.randint(0, 20))
@@ -22,13 +23,15 @@ print(random_list)
 
 
 def selection_sort(arr):
-    for i in range(len(arr)-1):
+    for i in range(len(arr) - 1):
         min_set = i
-        for j in range(i+1, len(arr)):
+        for j in range(i + 1, len(arr)):
             if arr[j] < arr[min_set]:
                 min_set = j
         arr[i], arr[min_set] = arr[min_set], arr[i]
     return arr
+
+
 # def selectionSort(arr):
 #     for i in range(len(arr)-1):
 #         for j in range(i+1, len(arr)):

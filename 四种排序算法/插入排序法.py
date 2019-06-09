@@ -15,6 +15,7 @@ __author__ = 'John 2017/11/8 14:17'
 """
 
 import random
+
 random_list = []
 for i in range(20):
     random_list.append(random.randint(0, 20))
@@ -23,12 +24,12 @@ print(random_list)
 
 def insertion_sort(arr):
     for i in range(len(arr)):
-        preindex = i-1
+        preindex = i - 1
         temp = arr[i]
         while preindex >= 0 and arr[preindex] > temp:
-            arr[preindex+1] = arr[preindex]
+            arr[preindex + 1] = arr[preindex]
             preindex -= 1
-        arr[preindex+1] = temp
+        arr[preindex + 1] = temp
     return arr
 
 
